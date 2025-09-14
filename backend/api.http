@@ -1,0 +1,76 @@
+POST http://localhost:5000/register 
+Content-Type: application/json
+
+{
+    "username":"rahul",
+    "password":"rahul18",
+    "email":"rahul@gmail.com",
+    "name":"rahul chavhan"
+}
+###
+
+POST http://localhost:5000/login 
+Content-Type: application/json
+
+{
+  
+    "password":"pass",
+    "email":"avi@gmail.com"
+    
+
+}
+
+###
+GET http://localhost:5000/get_user_and_profile
+Content-Type: application/json
+
+{
+  
+    "token":"1c48594cc6bb261f744f84c5221b828e11568c57db9f64a50ce3301fa0505b7f"
+    
+
+}
+###
+Post http://localhost:5000/update_profile_data
+Content-Type: application/json
+
+{
+  
+    "token":"1c48594cc6bb261f744f84c5221b828e11568c57db9f64a50ce3301fa0505b7f",
+    
+  "_id": "68774083f8932f08de5b30ea",
+  "userId": {
+    "_id": "68774083f8932f08de5b30e8",
+    "name": "neha ",
+    "username": "neha",
+    "email": "neha@gmail.com",
+    "profilePicture": "default.jpg"
+  },
+  "bio": "software developer",
+  "currentPost": "",
+  "pastWork": [
+    {
+        "company":"microsoft",
+        "position":"CTO",
+        "year":3
+    }
+  ],
+  "education": [],
+  "__v": 0
+
+    
+
+}
+###
+GET http://localhost:5000/user/get_all_users
+Content-Type: application/json
+
+{
+
+}
+
+
+
+
+
+
